@@ -17,10 +17,12 @@ public class SmoothCamera : MonoBehaviour
 
     private void Update()
     {
+
         Vector3 newVector = player.transform.position + new Vector3(0,offset,0);
 
         transform.position = Vector3.SmoothDamp(transform.position, newVector, ref velocity, smoothTime);
     }
+
 
 
 }
