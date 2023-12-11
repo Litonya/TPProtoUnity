@@ -22,9 +22,10 @@ public class MedusaAgent : MonoBehaviour
     {
         if (agent.remainingDistance == 0f)
         {
-            Vector3 destination = new Vector3(Random.Range(2.5f, 7.5f), 0, Random.Range(-2.5f, 2.5f));
+            Vector3 destination = new Vector3(Random.Range(-2.5f, 2.5f), 0, Random.Range(2.5f, 7.5f));
             Debug.Log(destination);
             agent.SetDestination(destination);
+
         }
     }
 }
