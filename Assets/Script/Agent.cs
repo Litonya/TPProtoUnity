@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class Agent : MonoBehaviour
 {
-    [SerializeField]
     private GameObject Destination;
 
     private NavMeshAgent agent;
@@ -13,6 +12,7 @@ public class Agent : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        Destination = GameObject.FindGameObjectWithTag("Target");
     }
 
     private void Start()
