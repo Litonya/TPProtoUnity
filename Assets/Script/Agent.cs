@@ -17,7 +17,7 @@ public class Agent : MonoBehaviour
 
     private void Start()
     {
-        GoToDestination();
+        InvokeRepeating("GoToDestination", 0f, 0.5f);
     }
 
     public void GoToDestination()
