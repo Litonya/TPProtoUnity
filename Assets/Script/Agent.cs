@@ -12,7 +12,7 @@ public class Agent : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        Destination = GameObject.FindGameObjectWithTag("Target");
+        Destination = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Start()
